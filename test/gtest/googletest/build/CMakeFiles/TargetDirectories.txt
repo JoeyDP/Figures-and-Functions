@@ -1,0 +1,8 @@
+/home/joey/Documents/Projects/Functions and Figures/project/test/gtest/googletest/build/CMakeFiles/install.dir
+/home/joey/Documents/Projects/Functions and Figures/project/test/gtest/googletest/build/CMakeFiles/list_install_components.dir
+/home/joey/Documents/Projects/Functions and Figures/project/test/gtest/googletest/build/CMakeFiles/edit_cache.dir
+/home/joey/Documents/Projects/Functions and Figures/project/test/gtest/googletest/build/CMakeFiles/rebuild_cache.dir
+/home/joey/Documents/Projects/Functions and Figures/project/test/gtest/googletest/build/CMakeFiles/gtest.dir
+/home/joey/Documents/Projects/Functions and Figures/project/test/gtest/googletest/build/CMakeFiles/gtest_main.dir
+/home/joey/Documents/Projects/Functions and Figures/project/test/gtest/googletest/build/CMakeFiles/install/strip.dir
+/home/joey/Documents/Projects/Functions and Figures/project/test/gtest/googletest/build/CMakeFiles/install/local.dir

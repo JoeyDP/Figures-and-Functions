@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/figure/figure.h
+iostream
+-
+gsl/gsl_rng.h
+-
+
+/home/joey/Documents/Projects/Functions and Figures/project/src/figure/figure.cpp
+figure/figure.h
+/home/joey/Documents/Projects/Functions and Figures/project/src/figure/figure/figure.h
+stdio.h
+-
+math.h
+-
+vector
+-
+
+/home/joey/Documents/Projects/Functions and Figures/project/src/function/function.cpp
+

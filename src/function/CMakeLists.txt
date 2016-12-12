@@ -1,0 +1,5 @@
+SET(SRC
+	${SRC}
+	${CMAKE_CURRENT_SOURCE_DIR}/function.cpp
+	PARENT_SCOPE
+)

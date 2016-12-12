@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -Wall -g   CMakeFiles/FF.dir/main.cpp.o  -o ../FF -rdynamic -lgsl -lgslcblas libFigFunc.a 

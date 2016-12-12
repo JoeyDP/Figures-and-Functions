@@ -1,0 +1,2 @@
+/usr/bin/ar qc libFigFunc.a  CMakeFiles/FigFunc.dir/figure/figure.cpp.o CMakeFiles/FigFunc.dir/function/function.cpp.o
+/usr/bin/ranlib libFigFunc.a

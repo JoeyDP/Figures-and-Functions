@@ -1,0 +1,2 @@
+/usr/bin/ar qc libff,.a  CMakeFiles/ff,.dir/main.cpp.o CMakeFiles/ff,.dir/figure/figure.cpp.o CMakeFiles/ff,.dir/function/function.cpp.o
+/usr/bin/ranlib libff,.a
