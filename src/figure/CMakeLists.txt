@@ -1,5 +1,8 @@
 SET(SRC
 	${SRC}
-	${CMAKE_CURRENT_SOURCE_DIR}/figure.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/Ellips.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/Figure.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/FunctionFigure.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/Rectangle.cpp
 	PARENT_SCOPE
 )

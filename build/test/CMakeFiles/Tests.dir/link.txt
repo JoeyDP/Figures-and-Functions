@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11 -Wall -g   CMakeFiles/Tests.dir/test1.cpp.o  -o ../Tests -rdynamic gtest/googletest/libgtest.a gtest/googletest/libgtest_main.a gtest/googletest/libgtest.a -lpthread 

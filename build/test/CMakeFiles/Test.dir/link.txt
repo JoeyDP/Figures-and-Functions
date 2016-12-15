@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11 -Wall -g   CMakeFiles/Test.dir/test1.cpp.o  -o ../Test -rdynamic gtest/googletest/libgtest.a gtest/googletest/libgtest_main.a ../src/libFigFunc.a -lgsl -lgslcblas gtest/googletest/libgtest.a -lpthread 
