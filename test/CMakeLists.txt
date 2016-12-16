@@ -1,6 +1,7 @@
 SET(TESTSRC
 	${TESTSRC}
-	test1.cpp
+	figure_ellips.cpp
+	function_parse.cpp
 )
 
 ADD_SUBDIRECTORY (gtest)

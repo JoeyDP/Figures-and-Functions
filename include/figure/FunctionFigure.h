@@ -10,14 +10,13 @@
 namespace figure {
 
 using Point = std::pair<double, double>;
-using XYFunction = function::Function<Point>;
 
 class FunctionFigure: public Figure{
 private:
-	std::vector<XYFunction> inequations;
+	std::vector<function::Function> inequations;
 
 public:
-	FunctionFigure(std::initializer_list<XYFunction> functions);
+	FunctionFigure(std::initializer_list<function::Function> functions);
 	virtual ~FunctionFigure(){}
 
 	virtual Rectangle getBoundingBox() const;

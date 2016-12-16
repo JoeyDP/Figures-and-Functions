@@ -1,5 +1,6 @@
 SET(SRC
 	${SRC}
 	${CMAKE_CURRENT_SOURCE_DIR}/Operator.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/Function.cpp
 	PARENT_SCOPE
 )

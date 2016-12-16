@@ -1,13 +1,43 @@
 #include "function/Operator.h"
 
-#include "function/Function.h"
-
 namespace function {
 
+Operator::OperatorList Operator::operators;
+
 OperatorPlus opPlus;
+OperatorMinus opMinus;
+
+OperatorTimes opTimes;
+OperatorDiv opDiv;
+
+VariableXOperator variableXOperator;
+VariableYOperator variableYOperator;
+
+void Operator::registerOperator(Operator* op) {
+	registerOperator(op->toString(), op);
+}
+
+void Operator::registerOperator(const std::string& name, Operator* op) {
+	operators.push_front(std::make_pair(name, op));
+}
+
+const Operator::OperatorList Operator::getOperators() {
+	if(operators.empty()){
+		registerOperator(&opPlus);
+		registerOperator(&opMinus);
+
+		registerOperator(&opTimes);
+		registerOperator(&opDiv);
+
+		registerOperator(&variableXOperator);
+		registerOperator(&variableYOperator);
+	}
+
+	return operators;
+}
 
 ConstantOperator::ConstantOperator(double value):
-	Operator(0),
+	Operator(100),
 	value(value)
 {
 }
@@ -17,7 +47,7 @@ void ConstantOperator::operate(std::stack<double>& operands) const {
 }
 
 VariableOperator::VariableOperator(std::string name):
-	Operator(0),
+	Operator(100),
 	name(name)
 {
 }
@@ -47,11 +77,16 @@ void UnaryOperator::operate(std::stack<double>& operands) const{
 }
 
 void BinaryOperator::operate(std::stack<double>& operands) const{
-	double op1 = operands.top();
-	operands.pop();
+	if(operands.size() < 2){
+		return UnaryOperator::operate(operands);
+	}
 	double op2 = operands.top();
+	operands.pop();
+	double op1 = operands.top();
 	operands.pop();
 	operands.push(operate(op1, op2));
 }
 
 } /* namespace function */
+
+

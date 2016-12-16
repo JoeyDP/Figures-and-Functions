@@ -6,9 +6,8 @@
 
 int main(int argc, char* argv[]){
 
-	figure::XYFunction f("y < x");
-
-	figure::FunctionFigure figure1({f});
+	function::Function f("x * x + y");
+	std::cout << f.evaluate(std::make_pair(5, 7)) << std::endl;
 
 	return 0;
 }
